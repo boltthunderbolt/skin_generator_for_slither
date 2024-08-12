@@ -23,8 +23,8 @@ def show_results():
     print(f"\nGenerate result: {skin_code_generate_result}")
     generate_again = input("Generate again? [y/n] ")
     match generate_again:
-      case "y" | "yes" | "Y" | "Yes" | "YES": return show_results()
-      case _: break
+      case "n" | "no" | "N" | "No" | "NO": break
+      case _: return show_results()
 
 if __name__ == '__main__':
   reference_user_input_and_process()
