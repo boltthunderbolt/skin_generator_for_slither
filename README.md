@@ -1,9 +1,9 @@
 # Skin Code Generator for Slither io
 Generate your skin
 
-# Feature
+### Feature
 - Generate slither skin code by user reference
 - Free set the length characters of skin code
 
-# Update Plan
+### Update Plan
 - Adding random generator features
