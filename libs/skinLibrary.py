@@ -1,5 +1,3 @@
-import random
-
 skin_code_list = [
   ["glassy light red", '1'],
   ["dark red", '2'],
@@ -47,19 +45,6 @@ def show_skin_list():
   for show_list in skin_code_list:
     print(f"({show_list[1]}) | {show_list[0].capitalize()}");
 
-def get_skin_reference_input():
-  skin_reference_by_user_input = input("Input the skin part of your code: ")
-  return skin_reference_by_user_input
-
-def generate_skin_code(length, skin_reference_by_user_input):
-  skin_code = skin_reference_by_user_input
-  while len(skin_code) < length:
-    skin_code += random.choice(skin_code)
-  
-  skin_code = ''.join(random.sample(skin_code, len(skin_code)))
-  return skin_code
 
 if __name__ == '__main__':
   show_skin_list()
-  get_skin_reference_input()
-  generate_skin_code(length, skin_reference_by_user_input)
