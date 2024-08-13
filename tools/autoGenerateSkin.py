@@ -4,20 +4,25 @@ import random
 
 def start():
   global length
-  length = int(input("\nSet the length characters of skin code as you like: "))
-  if length < 1:
-    print("Length must bigger than 0")
-    return start()
+  while True:
+    try:
+      length = int(input("\nSet the length characters of skin code as you like: "))
+      if length < 2:
+        print("Length must bigger than 1 characters")
+        return start()
+      break
+    except ValueError:
+      print(f"{length} is not an integer, Try again")
   
 def show_results():
   while True:
     auto_generate_result = auto_generate_skin_process(length)
     print(f"\nGenerate result: {auto_generate_result}")
-    generate_again = input("Generate again? [y/n] ")
+    generate_again = input("Generate again? [enter / n] ")
     match generate_again:
       case "n" | "no" | "N" | "No" | "NO":
         print('\n' * 100)
-        return '\n' * 100 + Main.menu()
+        return Main.menu()
       case _: return show_results()
 
 

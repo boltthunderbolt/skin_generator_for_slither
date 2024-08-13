@@ -12,9 +12,15 @@ def menu():
     print(f"{option}. {list_option.capitalize()}")
   print()
 
-  generator_option_selected = int(input("Select your generator: "))
-  generator_option_selected -= 1
-  print(f"{generator_option[generator_option_selected].capitalize()} selected")
+  while True:
+    try:
+      generator_option_selected = int(input("\nSelect your generator by number: "))
+      generator_option_selected -= 1
+      print(f"{generator_option[generator_option_selected].capitalize()} selected")
+      break
+    except ValueError:
+      print("Please select by number")
+
 
   match generator_option_selected:
     case 0:
@@ -31,11 +37,9 @@ def menu():
             sleep(3)
             print('\n' * 100, "Program stopped")
             break
-          case "n" | "no" | "N" | "No" | "NO":
+          case _:
             print('\n' * 100);
             return main()
-          case _:
-            return menu()
 
 if __name__ == '__main__':
   main()

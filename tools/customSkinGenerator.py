@@ -4,29 +4,28 @@ import random
 
 def start():
   global length, skin_reference_by_user_input
-  try:
-    length = int(input("\nSet the length characters of skin code as you like: "))
-    if length < 1:
-      print("Length must bigger than 0")
-      return start()
+  while True:
+    try:
+      length = int(input("\nSet the length characters of skin code as you like: "))
     
-    print("================================\n")
-    show_skin_list()
-    print("================================\n")
+      print("================================\n")
+      show_skin_list()
+      print("================================\n")
 
-    while True:
-      skin_reference_by_user_input = get_skin_reference_input()
-      if len(skin_reference_by_user_input) > length:
-        print(f"\nYour skin code more than {length}");
-      else : break
-  except ValueError:
-    raise ValueError
+      while True:
+        skin_reference_by_user_input = get_skin_reference_input()
+        if len(skin_reference_by_user_input) > length:
+          print(f"\nYour skin code more than {length}");
+        else : break
+      break
+    except ValueError:
+      print(f"{length} is not an integer. Try again!")
 
 def show_results():
   while True:
     skin_code_generate_result = generate_skin_code_by_user_reference(length, skin_reference_by_user_input)
     print(f"\nGenerate result: {skin_code_generate_result}")
-    generate_again = input("Generate again? [y/n] ")
+    generate_again = input("Generate again? [enter / n] ")
     match generate_again:
       case "n" | "no" | "N" | "No" | "NO":
         print('\n' * 100);
