@@ -1,5 +1,5 @@
 from libs.skinLibrary import show_skin_list
-from Main import main
+import Main
 import random
 
 def start():
@@ -29,8 +29,8 @@ def show_results():
     generate_again = input("Generate again? [y/n] ")
     match generate_again:
       case "n" | "no" | "N" | "No" | "NO":
-        return main()
-        break
+        print('\n' * 100);
+        return Main.menu()
       case _: return show_results()
 
 # =======================================================================================
@@ -48,5 +48,5 @@ def generate_skin_code_by_user_reference(length, skin_reference_by_user_input):
   return skin_code
 
 if __name__ == '__main__':
-  reference_user_input_and_process()
+  start()
   show_results()

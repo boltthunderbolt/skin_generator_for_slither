@@ -6,10 +6,11 @@ def main():
 
 def menu():
   generator_option = ["auto generator skin", "custom generator skin", "exit program"]
+  print()
   print("Select your generator!\n======================")
-
   for option, list_option in enumerate(generator_option, start = 1):
     print(f"{option}. {list_option.capitalize()}")
+  print()
 
   generator_option_selected = int(input("Select your generator: "))
   generator_option_selected -= 1

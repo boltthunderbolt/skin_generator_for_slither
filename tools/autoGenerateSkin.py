@@ -1,4 +1,5 @@
 from libs import skinLibrary
+import Main
 import random
 
 def start():
@@ -9,18 +10,21 @@ def start():
     return start()
   
 def show_results():
-  auto_generate_result = auto_generate_skin_process(length)
-  print(f"Generate Result : {auto_generate_result}")
+  while True:
+    auto_generate_result = auto_generate_skin_process(length)
+    print(f"\nGenerate result: {auto_generate_result}")
+    generate_again = input("Generate again? [y/n] ")
+    match generate_again:
+      case "n" | "no" | "N" | "No" | "NO":
+        print('\n' * 100)
+        return '\n' * 100 + Main.menu()
+      case _: return show_results()
 
 
 def auto_generate_skin_process(length):
   # Get characters from tools/skinLibrary
-  skin_code_characters = [skinLibrary.skin_code_list[0][0]]
+  skin_code_characters = [sublist[1] for sublist in skinLibrary.skin_code_list]
 
   # Generate random skin
-  while skin_code_characters == length:
-    length = random.choice(skin_code_characters)
-
-  # Generate x2
-  length = ''.join(random.sample(skin_code_characters, len(skin_code_characters)))
-  return length
+  skin_codes = ''.join(random.choice(skin_code_characters) for _ in range(length))
+  return skin_codes
