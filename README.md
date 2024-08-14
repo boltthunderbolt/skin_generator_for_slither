@@ -2,7 +2,9 @@
 Find your custom snake skin
 
 ### Feature
-- Generate slither skin code by user reference or auto generate skin code
+- Auto generate skin color code
+- Generate skin color code by your reference
+- Country flag skin color code generator
 - Free set the length characters of skin code
 
 ### How to Install

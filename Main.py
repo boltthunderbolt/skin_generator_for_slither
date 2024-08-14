@@ -1,11 +1,12 @@
 from time import sleep
-from tools import autoGenerateSkin, customSkinGenerator
+from tools import autoGenerateSkin, customSkinGenerator, countriesSkin
 
 def main():
   menu()
 
 def menu():
-  generator_option = ["auto generator skin", "custom generator skin", "exit program"]
+  generator_option = ["auto generator skin", "custom generator skin", "countries skin", "exit program"]
+
   print()
   print("Select your generator!\n======================")
   for option, list_option in enumerate(generator_option, start = 1):
@@ -30,6 +31,8 @@ def menu():
       customSkinGenerator.start()
       customSkinGenerator.show_results()
     case 2:
+      countriesSkin.start()
+    case 3:
       menu_program = input("\nAre you sure want to exit? [y / n] : ")
       while True:
         match menu_program:
