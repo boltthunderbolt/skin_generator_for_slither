@@ -44,7 +44,3 @@ def show_skin_list():
   print("----|-----------------")
   for show_list in skin_code_list:
     print(f"({show_list[1]}) | {show_list[0].capitalize()}");
-
-
-if __name__ == '__main__':
-  show_skin_list()
