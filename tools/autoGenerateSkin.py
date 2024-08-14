@@ -10,7 +10,7 @@ def start():
       if length < 2:
         print("Length must bigger than 1 characters")
         return start()
-      break
+      else: break
     except ValueError:
       print(f"{length} is not an integer, Try again")
   
