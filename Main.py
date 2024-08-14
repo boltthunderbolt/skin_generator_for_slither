@@ -31,6 +31,7 @@ def menu():
       customSkinGenerator.show_results()
     case 2:
       countriesSkin.start()
+      # countriesSkin.exit()
     case 3:
       menu_program = input("\nAre you sure want to exit? [y / n] : ")
       while True:
