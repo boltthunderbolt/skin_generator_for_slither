@@ -34,8 +34,8 @@ def start():
       else:
         user_input -= 1
         print(f"\n{countries_skin_list[user_input][0].capitalize()} selected");
-        print('=' * len(countries_skin_list[user_input][0]));
         user_input = countries_skin_list[user_input][1]() # call the value of function from array
+        print()
 
         while True:
           generate_again = input("Want to generate again? [enter / n]: ")
