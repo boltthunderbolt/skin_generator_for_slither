@@ -47,7 +47,7 @@ def start():
           generate_again = input("Want to generate again? [enter / n]: ")
           match generate_again:
             case "n" | "no" | "N" | "No" | "NO":
-              print('\n' * 100)
+              print(Main.CLEAR, Main.CLEAR_AND_RETURN)
               Main.menu()
               break
             case _:

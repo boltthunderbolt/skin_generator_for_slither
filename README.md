@@ -6,6 +6,7 @@ Find your custom snake skin
 - Generate skin color code by your reference
 - Country flag skin color code generator
 - Free set the length characters of skin code
+- List of Gradation Skin
 
 ### How to Install
 - I make this in Python Program, so required to install Python first, here 👉 [Download Python](https://www.python.org/downloads/)

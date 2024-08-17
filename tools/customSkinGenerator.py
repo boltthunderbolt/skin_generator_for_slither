@@ -28,7 +28,7 @@ def show_results():
     generate_again = input("Generate again? [enter / n] ")
     match generate_again:
       case "n" | "no" | "N" | "No" | "NO":
-        print('\n' * 100);
+        print(Main.CLEAR, Main.CLEAR_AND_RETURN);
         return Main.menu()
       case _: return show_results()
 
