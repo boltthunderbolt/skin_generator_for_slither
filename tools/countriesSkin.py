@@ -87,7 +87,7 @@ def finland_skins():
   print('s' * characters_length + '4' * int(characters_length / 5) + 's' * int(characters_length / 5) + '4' * characters_length)
 
 def brazil_skins():
-  print('o' * int(characters_length / 1.5) + 'w' * int(characters_length / 2) + '4' * int(characters_length / 2) + 's' * int(characters_length / 5) + 'w' * int(characters_length / 2))
+  print('o' * int(characters_length / 1.5) + 'w' * int(characters_length / 2) + 'e' * int(characters_length / 2) + 's' * int(characters_length / 5) + 'e' * int(characters_length / 2) + 'w' * int(characters_length / 2))
 
 def japan_skins():
   print('s' * characters_length + '5' * int(characters_length / 1.5))
