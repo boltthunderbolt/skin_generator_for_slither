@@ -9,13 +9,14 @@ def start():
     ["New Year Fireworks", new_year_fireworks],
     ["Birthday Funfetti Cake", birthday_funfetti_cake],
     ["Birthday Ice Cream Cake", birthday_ice_cream_cake],
-    ["Birthday Blue Velvet Cake", birthday_blue_velvet_cake]
+    ["Birthday Blue Velvet Cake", birthday_blue_velvet_cake],
+    ["Green White", green_white]
   ]
   gradation_skin.sort()
 
   print()
   for option, showList in enumerate(gradation_skin, start = 1):
-    print(f"{option}. {showList[0].capitalize()}")
+    print(f"{option}. {showList[0].title()}")
   print()
 
   while True:
@@ -25,7 +26,7 @@ def start():
         print(f"Choose from 1 - {len(gradation_skin)}")
       else:
         user_input -= 1
-        print(f"{gradation_skin[user_input][0]} selected\n")
+        print(f"{gradation_skin[user_input][0].title()} selected\n")
         gradation_skin[user_input][1]()
         while True:
           generate_again = input("\nWant to generate again? [enter / n]: ")
@@ -63,3 +64,6 @@ def birthday_ice_cream_cake():
 
 def birthday_blue_velvet_cake():
   print("sbsdxzxujzszjuucbssdxzljdjlzxdssbcudxjlzd44jxj44dzljxducbssdxucuxjlzszljxucuxdssbxjld44jxj44dljxbssdzxjl44bsdjljdsb44ljzxzjdxjljxdjlzxzjl44bsdjljdsb44ljxzdssbxjld44jxj44dljxbssdxucuxjlzszljxucuxdssbcudxjlzd44jxj44dzljxducbssdxzljdjlzxdssbcudxjlzv")
+
+def green_white():
+  print("ihiihhihhhhhhhhohoohhoohohhooohooovooohvovvoooovvhohovvvovvovovvvvovvvvvsvvvsvosvvsvsvvvosvvvvvvvsvssvsvvvvsvssssssssssssssssvsvvvvsvssvsvvvvvvvsovvvsvsvvsovsvvvsvvvvvovvvvovovvovvvohohvvoooovvovhooovooohooohhohoohhoohohhhhhhhhihhiihi")
