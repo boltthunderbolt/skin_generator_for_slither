@@ -10,7 +10,8 @@ def start():
     ["Birthday Funfetti Cake", birthday_funfetti_cake],
     ["Birthday Ice Cream Cake", birthday_ice_cream_cake],
     ["Birthday Blue Velvet Cake", birthday_blue_velvet_cake],
-    ["Green White", green_white]
+    ["Green White", green_white],
+    ["Yellow Brown", yellow_brown]
   ]
   gradation_skin.sort()
 
@@ -67,3 +68,6 @@ def birthday_blue_velvet_cake():
 
 def green_white():
   print("ihiihhihhhhhhhhohoohhoohohhooohooovooohvovvoooovvhohovvvovvovovvvvovvvvvsvvvsvosvvsvsvvvosvvvvvvvsvssvsvvvvsvssssssssssssssssvsvvvvsvssvsvvvvvvvsovvvsvsvvsovsvvvsvvvvvovvvvovovvovvvohohvvoooovvovhooovooohooohhohoohhoohohhhhhhhhihhiihi")
+
+def yellow_brown():
+  print("wgnmmngw")
