@@ -1,5 +1,5 @@
 # Skin Code Generator for Slither io
-Find your custom snake skin
+Find your custom snake skin.
 
 ### Feature
 - Auto generate skin color code
