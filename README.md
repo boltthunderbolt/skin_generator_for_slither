@@ -10,7 +10,7 @@ Find your custom snake skin
 
 ### How to Install
 - I make this in Python Program, so required to install Python first, here 👉 [Download Python](https://www.python.org/downloads/)
-- After that, you can download this code by ZIP or clone this repo
+- After that, you can download this code by ZIP or clone this repo.
 
 ### How does it work
 1) Run this program in terminal by command:
