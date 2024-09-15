@@ -16,7 +16,7 @@ Find your custom snake skin
 1) Run this program in terminal by command:
   - Windows : py Main.py or python Main.py
   - Mac OS  : python3 Main.py
-2) Then select the generator you want
+2) Then select the generator you want.
 
 *Happy Slithering* 🐍
 *#findyourcustomskin*
