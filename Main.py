@@ -1,5 +1,5 @@
 from time import sleep
-from tools import autoGenerateSkin, customSkinGenerator, countriesSkin, gradationSkin
+from tools import autoGenerateSkin, customSelectionSkin, customSkinGenerator, countriesSkin, gradationSkin
 CLEAR = "\033[2J"
 CLEAR_AND_RETURN = "\033[H"
 
@@ -7,7 +7,7 @@ def main():
   menu()
 
 def menu():
-  generator_option = ["auto generator skin", "custom generator skin", "countries skin", "gradation skin", "exit program"]
+  generator_option = ["auto generator skin", "custom skin generator", "countries skin", "custom skin selection", "gradation skin generator" ,"exit program"]
   print()
   print("Select your generator!\n======================")
   for option, list_option in enumerate(generator_option, start = 1):
@@ -37,8 +37,10 @@ def menu():
     case 2:
       countriesSkin.start()
     case 3:
-      gradationSkin.start()
+      customSelectionSkin.start()
     case 4:
+      gradationSkin.start()
+    case 5:
       menu_program = input("\nAre you sure want to exit? [y / n] : ")
       while True:
         match menu_program:
